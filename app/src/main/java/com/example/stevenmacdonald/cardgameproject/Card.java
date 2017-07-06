@@ -13,13 +13,16 @@ public class Card {
     public HashMap<Integer,String> deck = new HashMap();
 
 
-    public Card(int value, String name) {
+    public Card() {
 
-        deck.put(value,name);
+
         populateDeck();
 
     }
 
+    public HashMap<Integer, String> getDeck() {
+        return deck;
+    }
 
     public String getCard(int value) {
         String var = deck.get(value);
@@ -27,7 +30,10 @@ public class Card {
 
     }
 
-    public void populateDeck(){
+    public void populateDeck()
+    {
         deck.put(1,"testing");
+        deck.put(2,"testing2");
+        deck.put(3,"testing3");
     }
 }
