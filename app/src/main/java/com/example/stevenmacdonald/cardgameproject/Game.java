@@ -4,8 +4,6 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 
-//import static android.R.attr.value;
-
 /**
  * Created by stevenmacdonald on 06/07/2017.
  */
@@ -13,10 +11,13 @@ import java.util.concurrent.TimeUnit;
 public class Game {
 
     private int[] holding = new int[4];
-
+    Player player1;
+    Player computer;
 
 
     public Game() {
+       this.player1 = new Player(null,null);
+        this.computer = new Player(null,null);
 
     }
 
@@ -45,12 +46,9 @@ public class Game {
         System.arraycopy(holding,0,player1hand,0,player1hand.length);
         System.arraycopy(holding,player1hand.length,player2hand,0, player2hand.length);
 
-        Player player1 = new Player("Steven",player1hand);
-        Player computer = new Player("computer",player2hand);
+        this.player1 = new Player("Steven",player1hand);
+        this.computer = new Player("computer",player2hand);
     }
-
-
-
 
 
     private int randomNumber() {

@@ -9,8 +9,8 @@ package com.example.stevenmacdonald.cardgameproject;
 
 public class Player {
 
-    private String name;
-    private int[] hand;
+    public  String name;
+    public  int[] hand;
 
     public Player(String name, int hand[])
     {
