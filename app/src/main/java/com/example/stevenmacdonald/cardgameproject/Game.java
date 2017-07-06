@@ -12,15 +12,12 @@ import java.util.concurrent.TimeUnit;
 
 public class Game {
 
-//    private Player player;
-//    private Card[] hand;
     private int[] holding = new int[4];
 
 
 
     public Game() {
 
-//        this.hand = new Card[3];
     }
 
     public void setupHands() {
@@ -38,6 +35,8 @@ public class Game {
     }
 
     public void setupPlayers(){
+
+//        <<<<>>>><<<>>> might add in taking in username <<<>>><<<>>><<>
 
         int[] player1hand = new int[2];
         int[] player2hand = new int[2];
