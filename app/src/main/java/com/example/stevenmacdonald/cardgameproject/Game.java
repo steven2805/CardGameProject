@@ -11,8 +11,8 @@ import java.util.concurrent.TimeUnit;
 public class Game {
 
     private int[] holding = new int[4];
-    Player player1;
-    Player computer;
+    private Player player1;
+    private Player computer;
 
 
     public Game() {
@@ -38,16 +38,24 @@ public class Game {
     public void setupPlayers(){
 
 //        <<<<>>>><<<>>> might add in taking in username <<<>>><<<>>><<>
-
         int[] player1hand = new int[2];
         int[] player2hand = new int[2];
-
 //              (src   , src-offset  , dest , offset, count)
         System.arraycopy(holding,0,player1hand,0,player1hand.length);
         System.arraycopy(holding,player1hand.length,player2hand,0, player2hand.length);
 
         this.player1 = new Player("Steven",player1hand);
         this.computer = new Player("computer",player2hand);
+    }
+
+
+    public String whoWins(){
+        int player1handtotal = player1.hand[0] + player1.hand[1];
+        int computerhandtotal = computer.hand[0] + computer.hand[1];
+
+        if(player1handtotal == computerhandtotal) return "draw";
+        else if(player1handtotal > computerhandtotal)return player1.name + "wins";
+        else return "You lose play again";
     }
 
 
