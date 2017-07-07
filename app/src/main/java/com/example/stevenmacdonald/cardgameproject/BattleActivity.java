@@ -20,15 +20,23 @@ public class BattleActivity extends AppCompatActivity {
         image3Button = (ImageButton) findViewById(R.id.imageButton3);
         String image1 = getIntent().getStringExtra("image1");
         String image2 = getIntent().getStringExtra("image2");
+        String image3 = getIntent().getStringExtra("image3");
 
         Resources resources = getApplicationContext().getResources();
         final int resourceId = resources.getIdentifier(image1, "drawable",
                 getApplicationContext().getPackageName());
 
+        Resources resources1 = getApplicationContext().getResources();
+        final int resource1Id = resources.getIdentifier(image2, "drawable",
+                getApplicationContext().getPackageName());
+
+        Resources resources2 = getApplicationContext().getResources();
+        final int resource2Id = resources.getIdentifier(image3, "drawable",
+                getApplicationContext().getPackageName());
 
         image1Button.setImageDrawable(resources.getDrawable(resourceId));
-        image2Button.setImageDrawable(resources.getDrawable(resourceId));
-        image3Button.setImageDrawable(resources.getDrawable(resourceId));
+        image2Button.setImageDrawable(resources.getDrawable(resource1Id));
+        image3Button.setImageDrawable(resources.getDrawable(resource2Id));
 
 
     }

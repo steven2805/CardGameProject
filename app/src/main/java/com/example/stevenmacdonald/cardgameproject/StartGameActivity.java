@@ -34,11 +34,16 @@ public class StartGameActivity extends AppCompatActivity {
 //        computer = game.computer;
 //        String result = game.whoWins(player1,computer);
 //        answerTextview.setText(result);
-        game.getPlayersCards(game.player1.hand);
+        String[] array = new String[3];
+        array[0] = "metapod";
+        array[1] = "metapod";
+        array[2] = "charmander";
+
+//        array = game.getPlayersCardNames(game.player1.hand);
         Intent intent = new Intent(this, BattleActivity.class);
-        intent.putExtra("image1","charmander");
-        intent.putExtra("image2","charmander");
-        intent.putExtra("image3","charmander");
+        intent.putExtra("image1",array[0]);
+        intent.putExtra("image2",array[1]);
+        intent.putExtra("image3",array[2]);
         startActivity(intent);
     }
 }

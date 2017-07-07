@@ -10,18 +10,18 @@ public class Game {
     public Player player1;
     public Player computer;
     public Card card;
+    Card deck = new Card();
+
 
 
     public Game() {
        this.player1 = new Player(null,null);
         this.computer = new Player(null,null);
-//        card = new Card;
+
 
     }
 
     public void setupHands() {
-//        int[] holding = new int[4];
-        Card deck = new Card();
         deck.getDeck();
         int counter = 0;
         while (counter < 6) {
@@ -30,9 +30,7 @@ public class Game {
             counter++;
         }
         setupPlayers();
-
     }
-
 
 
     public void setupPlayers(){
@@ -46,17 +44,10 @@ public class Game {
         this.computer = new Player("computer",player2hand);
     }
 
-    public String selectWhichCardToUse(int computercardid){
-        Card deck = new Card();
-        String computerSingleCard = deck.getCard(computercardid);
-        return computerSingleCard;
-
-    }
-
-    public String[] getPlayersCards(int playercardid[]){
+    public String[] getPlayersCardNames(int playercardid[]){
 
     String[] array = new String[3];
-    Card deck = new Card();
+//    Card deck = new Card();
         int count = 0;
         for(int cardnumber: playercardid) {
             String cardtitle = deck.getCard(cardnumber);

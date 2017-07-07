@@ -21,7 +21,7 @@ public class Card {
     public void populateDeck()
     {
         deck.put(1,"charmander");
-        deck.put(2,"testing2");
+        deck.put(2,"metapod");
         deck.put(3,"testing3");
         deck.put(4,"testing4");
         deck.put(5,"testing5");
