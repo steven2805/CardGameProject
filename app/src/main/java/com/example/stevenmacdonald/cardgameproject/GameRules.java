@@ -5,15 +5,15 @@ package com.example.stevenmacdonald.cardgameproject;
  */
 
 public class GameRules {
-    int playercount =  2;
-    int playercardsperhand = 2;
-    String wincriteria = "highest";
+    public int playercount;
+    public int playercardsperhand;
+    public String wincriteria;
 
 
     public GameRules(){
-        this.playercount = playercount;
-        this.playercardsperhand = playercardsperhand;
-        this.wincriteria = wincriteria;
+        this.playercount = 2;
+        this.playercardsperhand = 2;
+        this.wincriteria = "highest";
     }
 
     public int getPlayercount() {

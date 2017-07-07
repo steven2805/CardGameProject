@@ -4,16 +4,11 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 
-/**
- * Created by stevenmacdonald on 06/07/2017.
- */
-
 public class Game {
 
     private int[] holding = new int[4];
     public Player player1;
     public Player computer;
-//    Card card;
 
 
     public Game() {
@@ -59,12 +54,12 @@ public class Game {
     }
 
 
-    public String whoWins(){
-        int player1handtotal = player1.hand[0] + player1.hand[1];
-        int computerhandtotal = computer.hand[0] + computer.hand[1];
+    public String whoWins(Player player1,Player computer){
+         int player1handtotal = player1.hand[0] + player1.hand[1];
+         int computerhandtotal = computer.hand[0] + computer.hand[1];
 
         if(player1handtotal == computerhandtotal) return "draw";
-        else if(player1handtotal > computerhandtotal)return player1.name + "wins";
+        else if(player1handtotal > computerhandtotal)return player1.name + " wins";
         else return "You lose play again";
     }
 
