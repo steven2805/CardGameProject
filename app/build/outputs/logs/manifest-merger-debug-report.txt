@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:1:1-15:12
+ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:2:1-21:12
 	package
 		ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:3:5-58
 		INJECTED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml
@@ -9,12 +9,12 @@ ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/
 		INJECTED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
 		INJECTED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:5:5-13:19
+ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:5:5-19:19
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/stevenmacdonald/.android/build-cache/cc82fb3909c835d82ebe5a9d9338099e87b4673d/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/stevenmacdonald/.android/build-cache/ee2da7265af93e127c93d841028c73cc9ad77325/output/AndroidManifest.xml:29:5-20
@@ -24,6 +24,7 @@ MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/steven
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/stevenmacdonald/.android/build-cache/a79d8aff905d445048c5422745017694996cd8d0/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/stevenmacdonald/.android/build-cache/80cece8e31ed227f37ed63788633e85d99431c08/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/stevenmacdonald/.android/build-cache/12c7fecbccb0d428b31ff442b28a6b3761550aa6/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/stevenmacdonald/.android/build-cache/1bd5be067bc2e016a916e97a3886e8440e06fc8c/output/AndroidManifest.xml:9:5-20
 	android:label
 		ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:8:9-41
 	android:supportsRtl
@@ -36,6 +37,20 @@ MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/stevenmacd
 		ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:7:9-43
 	android:theme
 		ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.stevenmacdonald.cardgameproject.StartGameActivity
+ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:12:19-52
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:16:27-74
 uses-sdk
 INJECTED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/AndroidManifest.xml:21:5-23:78
@@ -47,6 +62,7 @@ MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/steven
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/stevenmacdonald/.android/build-cache/a79d8aff905d445048c5422745017694996cd8d0/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/stevenmacdonald/.android/build-cache/80cece8e31ed227f37ed63788633e85d99431c08/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/stevenmacdonald/.android/build-cache/12c7fecbccb0d428b31ff442b28a6b3761550aa6/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/stevenmacdonald/.android/build-cache/1bd5be067bc2e016a916e97a3886e8440e06fc8c/output/AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion

@@ -51,6 +51,8 @@ public class Game {
 
         this.player1 = new Player("Steven",player1hand);
         this.computer = new Player("computer",player2hand);
+
+
     }
 
 
@@ -76,11 +78,5 @@ public class Game {
         return temp;
 
     }
-
-
-
-
-
-
 
 }
