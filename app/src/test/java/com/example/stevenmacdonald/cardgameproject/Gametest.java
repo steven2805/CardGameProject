@@ -30,6 +30,7 @@ public class Gametest {
     @Test
     public void checkingThePlayersHand(){
         game.setupHands();
+        game.getPlayersCards(game.player1.hand);
         assertNotNull(game.player1.hand);
     }
 

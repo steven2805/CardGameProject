@@ -1,8 +1,5 @@
 package com.example.stevenmacdonald.cardgameproject;
 
-/**
- * Created by stevenmacdonald on 07/07/2017.
- */
 
 public class GameRules {
     public int playercount;

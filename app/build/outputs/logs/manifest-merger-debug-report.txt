@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:2:1-21:12
+ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:2:1-22:12
 	package
 		ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:3:5-58
 		INJECTED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/
 		INJECTED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:5:5-19:19
+ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:5:5-20:19
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/stevenmacdonald/.android/build-cache/cc82fb3909c835d82ebe5a9d9338099e87b4673d/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/stevenmacdonald/.android/build-cache/ee2da7265af93e127c93d841028c73cc9ad77325/output/AndroidManifest.xml:29:5-20
@@ -51,6 +51,10 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:16:27-74
+activity#com.example.stevenmacdonald.cardgameproject.BattleActivity
+ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:19:9-61
+	android:name
+		ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:19:19-49
 uses-sdk
 INJECTED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/AndroidManifest.xml:21:5-23:78

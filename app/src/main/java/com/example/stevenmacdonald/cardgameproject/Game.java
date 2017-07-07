@@ -6,9 +6,10 @@ import java.util.concurrent.TimeUnit;
 
 public class Game {
 
-    private int[] holding = new int[4];
+    private int[] holding = new int[6];
     public Player player1;
     public Player computer;
+    public Card card;
 
 
     public Game() {
@@ -23,7 +24,7 @@ public class Game {
         Card deck = new Card();
         deck.getDeck();
         int counter = 0;
-        while (counter < 4) {
+        while (counter < 6) {
             int temp = randomNumber();
             holding[counter] = temp;
             counter++;
@@ -32,27 +33,37 @@ public class Game {
 
     }
 
-//    public String getCardValues(){
-//        int pcard = player.hand[0];
-//        String pcardfinal = card.getCard(pcard);
-//        return pcardfinal;
-//       <<<>>>><<<<>>><<<>>< you are heer  <<<<>>>><<<<>>>?><><><><
-//    }
-
 
 
     public void setupPlayers(){
-//        <<<<>>>><<<>>> might add in taking in username <<<>>><<<>>><<>
-        int[] player1hand = new int[2];
-        int[] player2hand = new int[2];
+        int[] player1hand = new int[3];
+        int[] player2hand = new int[3];
 //              (src   , src-offset  , dest , offset, count)
         System.arraycopy(holding,0,player1hand,0,player1hand.length);
         System.arraycopy(holding,player1hand.length,player2hand,0, player2hand.length);
 
         this.player1 = new Player("Steven",player1hand);
         this.computer = new Player("computer",player2hand);
+    }
 
+    public String selectWhichCardToUse(int computercardid){
+        Card deck = new Card();
+        String computerSingleCard = deck.getCard(computercardid);
+        return computerSingleCard;
 
+    }
+
+    public String[] getPlayersCards(int playercardid[]){
+
+    String[] array = new String[3];
+    Card deck = new Card();
+        int count = 0;
+        for(int cardnumber: playercardid) {
+            String cardtitle = deck.getCard(cardnumber);
+            array[count] = cardtitle;
+            count ++;
+        }
+        return array;
     }
 
 
@@ -63,6 +74,7 @@ public class Game {
         if(player1handtotal == computerhandtotal) return "draw";
         else if(player1handtotal > computerhandtotal)return player1.name + " wins";
         else return "You lose play again";
+
     }
 
 
@@ -74,9 +86,7 @@ public class Game {
         }
         Random rand = new Random();
         rand.setSeed(System.currentTimeMillis());
-        int temp = rand.nextInt(20);
+        int temp = rand.nextInt(7); //<<<<<<<<<<<<<<<<increase this steven
         return temp;
-
     }
-
 }
