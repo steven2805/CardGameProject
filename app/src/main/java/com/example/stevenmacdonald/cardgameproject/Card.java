@@ -15,8 +15,7 @@ public class Card {
     }
 
     public String getCard(int value) {
-        String var = deck.get(value);
-        return var;
+        return deck.get(value);
     }
 
     public void populateDeck()

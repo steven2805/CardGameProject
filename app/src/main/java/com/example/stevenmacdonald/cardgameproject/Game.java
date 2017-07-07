@@ -11,13 +11,15 @@ import java.util.concurrent.TimeUnit;
 public class Game {
 
     private int[] holding = new int[4];
-    private Player player1;
-    private Player computer;
+    public Player player1;
+    public Player computer;
+//    Card card;
 
 
     public Game() {
        this.player1 = new Player(null,null);
         this.computer = new Player(null,null);
+//        card = new Card;
 
     }
 
@@ -35,8 +37,16 @@ public class Game {
 
     }
 
-    public void setupPlayers(){
+//    public String getCardValues(){
+//        int pcard = player.hand[0];
+//        String pcardfinal = card.getCard(pcard);
+//        return pcardfinal;
+//       <<<>>>><<<<>>><<<>>< you are heer  <<<<>>>><<<<>>>?><><><><
+//    }
 
+
+
+    public void setupPlayers(){
 //        <<<<>>>><<<>>> might add in taking in username <<<>>><<<>>><<>
         int[] player1hand = new int[2];
         int[] player2hand = new int[2];
