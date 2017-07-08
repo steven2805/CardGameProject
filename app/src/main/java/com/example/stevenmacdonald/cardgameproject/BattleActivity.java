@@ -10,11 +10,13 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
 public class BattleActivity extends AppCompatActivity {
 
 
     private ImageButton image1Button, image2Button, image3Button;
-    private TextView Card1TextView;
+    private TextView card1TextView, card2TextView, card3TextView;
 
 
     @Override
@@ -24,18 +26,26 @@ public class BattleActivity extends AppCompatActivity {
         image1Button = (ImageButton) findViewById(R.id.PlayerCard1);
         image2Button = (ImageButton) findViewById(R.id.PlayerCard2);
         image3Button = (ImageButton) findViewById(R.id.PlayerCard3);
-        Card1TextView = (TextView) findViewById(R.id.Card1TextView);
+        card1TextView = (TextView) findViewById(R.id.Card1TextView);
+        card2TextView = (TextView) findViewById(R.id.card2TextView);
+        card3TextView = (TextView) findViewById(R.id.card3TextView);
 
         int card1ID = Game.getInstance().player1.hand[0];
         int card1Resource = Game.getInstance().deck.getCard(card1ID).getResource();
         int cardValue = Game.getInstance().deck.getCard(card1ID).getValue();
-        Card1TextView.setText(Integer.toString(cardValue));
+        card1TextView.setText(Integer.toString(cardValue));
         image1Button.setImageResource(card1Resource);
+
         int card2ID = Game.getInstance().player1.hand[1];
         int card2Resource = Game.getInstance().deck.getCard(card2ID).getResource();
+        int card2Value = Game.getInstance().deck.getCard(card2ID).getValue();
+        card2TextView.setText(Integer.toString(card2Value));
         image2Button.setImageResource(card2Resource);
+
         int card3ID = Game.getInstance().player1.hand[2];
         int card3Resource = Game.getInstance().deck.getCard(card3ID).getResource();
+        int card3Value = Game.getInstance().deck.getCard(card3ID).getValue();
+        card3TextView.setText(Integer.toString(card3Value));
         image3Button.setImageResource(card3Resource);
 
     }

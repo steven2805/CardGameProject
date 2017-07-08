@@ -64,12 +64,12 @@
         "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
-        "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_black_36dp.png",
         "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable-mdpi-v4/abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
