@@ -54,10 +54,8 @@ public class BattleActivity extends AppCompatActivity {
 
 
 
-    public void onbuttonclick1(View view){
+    public void onButtonClick1(View view){
         Log.d(getClass().toString(), "Testing the button 1 is working");
-//        int computercard = 0;
-//        int computercard = game.computerPickACard();
 //        selecting this means the player has selected the first deck in the array
         int player1CardValue = Game.getInstance().deck.getCard(Game.getInstance().player1.hand[0]).getValue();
         int computerCardValue = Game.getInstance().deck.getCard(Game.getInstance().computer.hand[0]).getValue();

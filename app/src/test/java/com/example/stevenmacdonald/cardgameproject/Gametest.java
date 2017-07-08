@@ -9,19 +9,10 @@ import static junit.framework.Assert.assertNotNull;
 
 public class Gametest {
 
-    Deck deck;
-    Player player1;
-    Player computer;
-
 
    @Before
    public void before(){
        Game.getInstance().setupGame();
-       int[] array1 = new int[]{3,8,3};
-       int[] array2 = new int[]{2,6,1};
-       this.player1 = new Player("Steven",array1);
-       this.computer = new Player("masterrace",array2);
-
     }
 
     @Test

@@ -5,12 +5,9 @@ import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-
-
 public class DeckTest {
 
     Deck deck;
-
 
     @Before
     public void before(){
@@ -32,6 +29,4 @@ public class DeckTest {
     public void checkCardValue(){
         assertEquals(5,deck.getCard(1).getValue());
     }
-
-
 }
