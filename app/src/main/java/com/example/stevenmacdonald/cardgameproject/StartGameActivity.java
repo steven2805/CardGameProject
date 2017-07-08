@@ -13,7 +13,7 @@ public class StartGameActivity extends AppCompatActivity {
 
     TextView answerTextview;
     Button StartGameButton;
-    Game game;
+    //Game game;
     Player player1;
     Player computer;
 
@@ -28,8 +28,8 @@ public class StartGameActivity extends AppCompatActivity {
 
     public void buttonClicked(View button){
         Log.d(getClass().toString(), "Button is working");
-        game = new Game();
-        game.setupHands();
+        Game.getInstance().setupHands();
+        //game.setupHands();
 //        player1 = game.player1;
 //        computer = game.computer;
 //        String result = game.whoWins(player1,computer);

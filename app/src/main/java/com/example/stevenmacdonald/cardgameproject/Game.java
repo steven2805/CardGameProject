@@ -6,17 +6,28 @@ import java.util.concurrent.TimeUnit;
 
 public class Game {
 
+    private static Game instance;
+
     private int[] holding = new int[6];
-    public Player player1;
-    public Player computer;
+    public Player player1, computer;
+//    public Player computer;
     public Card card;
     Card deck = new Card();
+    public int playerScore,computerScore;
+
+    public static Game getInstance(){
+        if(instance == null){
+            instance = new Game();
+        }
+        return instance;
+    }
 
 
-
-    public Game() {
+    private Game() {
        this.player1 = new Player(null,null);
         this.computer = new Player(null,null);
+        this.playerScore = 0;
+        this.computerScore = 0;
 
     }
 // creates an array of 6 cards
@@ -70,11 +81,11 @@ public class Game {
 
 // simple comparison of who has the highest numbered card
     public String whoWins(int playercard, int computercard){
-        int player = player1.hand[1];
-        int cmp = computer.hand[1];
-
-        if(player == cmp) return "draw";
-        else if(player > cmp)return player1.name + " wins";
+        int player = playercard;
+        int cmp = computercard;
+        if(player == cmp)
+        { return "draw";}
+        else if(player > cmp){return player1.name + " wins";}
         else return "You lose play again";
 
     }

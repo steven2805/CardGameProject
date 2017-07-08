@@ -7,13 +7,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 
 public class BattleActivity extends AppCompatActivity {
 
     private ImageButton image1Button, image2Button, image3Button;
-    Game game;
+    //Game game;
     Player player;
 
     @Override
@@ -46,9 +48,20 @@ public class BattleActivity extends AppCompatActivity {
 
     public void onbuttonclick1(View view){
         Log.d(getClass().toString(), "Testing the button 1 is working");
-        int computercard = game.computerPickACard();
-        // selecting this means the player has selected the first first card in the array
-        String result = game.whoWins(game.player1.hand[0],computercard);
+//        int computercard = 0;
+//        int computercard = game.computerPickACard();
+//        selecting this means the player has selected the first card in the array
+        String result = Game.getInstance().whoWins(Game.getInstance().player1.hand[0],Game.getInstance().computer.hand[0]);
+        Toast.makeText(this, result, Toast.LENGTH_LONG).show();
+        String placeholder = "placeholderball";
+        Resources resources = getApplicationContext().getResources();
+        final int resource99Id = resources.getIdentifier(placeholder, "drawable",
+                getApplicationContext().getPackageName());
+        image1Button.setImageDrawable(resources.getDrawable(resource99Id));
+//        view.setVisibility(View.GONE);
+
+
+
 
 
     }
