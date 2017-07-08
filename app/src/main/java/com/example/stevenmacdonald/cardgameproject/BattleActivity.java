@@ -44,14 +44,14 @@ public class BattleActivity extends AppCompatActivity {
         image3Button.setImageDrawable(resources.getDrawable(resource2Id));
     }
 
-//    public void onbuttonclick1(View view){
-//        Log.d(getClass().toString(), "Testing the button 1 is working");
-//        computercard = game.computerPickACard();
-//        // selecting this means the player has selected the first first card in the array
-//        game.whoWins()
-//
-//
-//    }
+    public void onbuttonclick1(View view){
+        Log.d(getClass().toString(), "Testing the button 1 is working");
+        int computercard = game.computerPickACard();
+        // selecting this means the player has selected the first first card in the array
+        String result = game.whoWins(game.player1.hand[0],computercard);
+
+
+    }
 
 
 }

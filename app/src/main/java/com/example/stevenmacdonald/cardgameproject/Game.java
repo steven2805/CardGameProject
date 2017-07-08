@@ -19,7 +19,7 @@ public class Game {
         this.computer = new Player(null,null);
 
     }
-
+// creates an array of 6 cards
     public void setupHands() {
         deck.getDeck();
         int counter = 0;
@@ -31,7 +31,7 @@ public class Game {
         setupPlayers();
     }
 
-
+// Self-explanatory
     public void setupPlayers(){
         int[] player1hand = new int[3];
         int[] player2hand = new int[3];
@@ -43,9 +43,9 @@ public class Game {
         this.computer = new Player("MasterRace",player2hand);
     }
 
+// recovering the names of the cards that the player has
     public String[] getCardNames(int playercardid[]){
         String[] array = new String[3];
-//    Card deck = new Card();
         int count = 0;
         for(int cardnumber: playercardid) {
             String cardtitle = deck.getCard(cardnumber);
@@ -55,11 +55,20 @@ public class Game {
         return array;
     }
 
+// return a number between 1-3 for the computer to put against the player..
     public int computerPickACard(){
-        return randomNumber(3);
+        int[] array = new int[]{1,2,3};
+        int rand = randomNumber(3);
+        int returnvalue = rand;
+        if(array[rand] == 9999)
+        {
+            computerPickACard();
+        }
+        array[rand] = 9999;
+        return returnvalue;
     }
 
-
+// simple comparison of who has the highest numbered card
     public String whoWins(int playercard, int computercard){
         int player = player1.hand[1];
         int cmp = computer.hand[1];
@@ -70,7 +79,7 @@ public class Game {
 
     }
 
-
+// random number generation (takes a value in to set the maximum value possible)
     private int randomNumber(int randomlimit) {
         try {
             TimeUnit.MILLISECONDS.sleep(1);
