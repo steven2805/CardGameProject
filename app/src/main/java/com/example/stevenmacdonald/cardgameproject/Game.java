@@ -1,6 +1,5 @@
 package com.example.stevenmacdonald.cardgameproject;
 
-import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -12,7 +11,7 @@ public class Game {
     private int[] holding = new int[6];
     public Player player1, computer;
     public Deck deck;
-    public int playerScore,computerScore;
+    public int playerScore,computerScore,drawCounter;
 
 
     public static Game getInstance(){
@@ -28,10 +27,11 @@ public class Game {
         this.computer = new Player(null,null);
         this.deck = new Deck();
     }
-// creates an array of 6 cards
+// creates an array of 6 cards from the deck
     public void setupGame() {
         this.playerScore = 0;
         this.computerScore = 0;
+        this.drawCounter = 0;
         int counter = 0;
         while (counter < 6) {
             int temp = deck.getDeck().get(randomNumber(deck.countDeck())).getId();
@@ -65,24 +65,13 @@ public class Game {
         return array;
     }
 
-// return a number between 1-3 for the computer to put against the player..
-//    public int computerPickACard(){
-//        int[] array = new int[]{1,2,3};
-//        int rand = randomNumber(3);
-//        int returnvalue = rand;
-//        if(array[rand] == 9999)
-//        {
-//            computerPickACard();
-//        }
-//        array[rand] = 9999;
-//        return returnvalue;
-//    }
 
 // simple comparison of who has the highest numbered deck
     public String whoWins(int playercard, int computercard){
         int player = playercard;
         int cmp = computercard;
         if(player == cmp) {
+            drawCounter ++;
             return "draw";
         }
         else if(player > cmp){
@@ -97,9 +86,15 @@ public class Game {
     }
 
     public Player whoWinsTheGame(){
-        if(playerScore == 1){
+        if(playerScore + computerScore + drawCounter == 3){
+            if (playerScore > computerScore) {
+                return player1;}
+            else
+                {return computer;}
+            }
+        else if(playerScore == 3){
             return player1;
-        }else if(computerScore == 1){
+        }else if(computerScore == 3){
             return computer;
         }else{
             return null;
