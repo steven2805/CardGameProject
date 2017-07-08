@@ -1,31 +1,25 @@
 package com.example.stevenmacdonald.cardgameproject;
 
-import android.content.res.Resources;
-import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import java.io.File;
 
 public class BattleActivity extends AppCompatActivity {
 
 
     private ImageButton image1Button, image2Button, image3Button;
-    //Game game;
-    //Player player;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_battle);
-        image1Button = (ImageButton) findViewById(R.id.imageButton);
-        image2Button = (ImageButton) findViewById(R.id.imageButton2);
-        image3Button = (ImageButton) findViewById(R.id.imageButton3);
+        image1Button = (ImageButton) findViewById(R.id.PlayerCard1);
+        image2Button = (ImageButton) findViewById(R.id.PlayerCard2);
+        image3Button = (ImageButton) findViewById(R.id.PlayerCard3);
 
         int card1Value = Game.getInstance().player1.hand[0];
         int card1Resource = Game.getInstance().deck.getCard(card1Value).getResource();
@@ -33,7 +27,6 @@ public class BattleActivity extends AppCompatActivity {
         int card2Value = Game.getInstance().player1.hand[1];
         int card2Resource = Game.getInstance().deck.getCard(card2Value).getResource();
         image2Button.setImageResource(card2Resource);
-
         int card3Value = Game.getInstance().player1.hand[2];
         int card3Resource = Game.getInstance().deck.getCard(card3Value).getResource();
         image3Button.setImageResource(card3Resource);

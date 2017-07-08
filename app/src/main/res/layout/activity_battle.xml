@@ -8,7 +8,7 @@
 tools:context="com.example.stevenmacdonald.cardgameproject.BattleActivity">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/PlayerCard1"
         android:layout_width="100dp"
         android:layout_height="120dp"
         android:layout_marginBottom="61dp"
@@ -19,23 +19,23 @@ tools:context="com.example.stevenmacdonald.cardgameproject.BattleActivity">
         app:srcCompat="@drawable/charmander" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/PlayerCard2"
         android:layout_width="100dp"
         android:layout_height="120dp"
         android:layout_marginBottom="61dp"
         android:layout_marginLeft="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/imageButton"
+        app:layout_constraintLeft_toRightOf="@+id/PlayerCard1"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/PlayerCard3"
         android:layout_width="100dp"
         android:layout_height="120dp"
         android:layout_marginBottom="61dp"
         android:layout_marginLeft="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/imageButton2"
+        app:layout_constraintLeft_toRightOf="@+id/PlayerCard2"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <ImageView
@@ -44,7 +44,7 @@ tools:context="com.example.stevenmacdonald.cardgameproject.BattleActivity">
         android:layout_height="100dp"
         app:srcCompat="@mipmap/ic_launcher"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginLeft="32dp"
         app:layout_constraintLeft_toLeftOf="parent" />
 

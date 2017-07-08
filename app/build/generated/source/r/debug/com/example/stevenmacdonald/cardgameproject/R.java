@@ -2306,6 +2306,9 @@ containing a value of this type.
         public static final int startgamefont=0x7f020062;
     }
     public static final class id {
+        public static final int PlayerCard1=0x7f0b005e;
+        public static final int PlayerCard2=0x7f0b005f;
+        public static final int PlayerCard3=0x7f0b0060;
         public static final int StartGameButton=0x7f0b0067;
         public static final int action0=0x7f0b006b;
         public static final int action_bar=0x7f0b004f;
@@ -2358,9 +2361,6 @@ containing a value of this type.
         public static final int icon_group=0x7f0b0079;
         public static final int ifRoom=0x7f0b0027;
         public static final int image=0x7f0b0031;
-        public static final int imageButton=0x7f0b005e;
-        public static final int imageButton2=0x7f0b005f;
-        public static final int imageButton3=0x7f0b0060;
         public static final int imageView=0x7f0b0061;
         public static final int imageView2=0x7f0b0062;
         public static final int imageView3=0x7f0b0063;

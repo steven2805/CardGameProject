@@ -2,7 +2,6 @@ package com.example.stevenmacdonald.cardgameproject;
 import android.content.ClipData;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 
