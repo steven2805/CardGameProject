@@ -4,6 +4,8 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.ImageButton;
 
 import java.io.File;
@@ -11,6 +13,9 @@ import java.io.File;
 public class BattleActivity extends AppCompatActivity {
 
     private ImageButton image1Button, image2Button, image3Button;
+    Game game;
+    Player player;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +42,16 @@ public class BattleActivity extends AppCompatActivity {
         image1Button.setImageDrawable(resources.getDrawable(resourceId));
         image2Button.setImageDrawable(resources.getDrawable(resource1Id));
         image3Button.setImageDrawable(resources.getDrawable(resource2Id));
-
-
     }
+
+//    public void onbuttonclick1(View view){
+//        Log.d(getClass().toString(), "Testing the button 1 is working");
+//        computercard = game.computerPickACard();
+//        // selecting this means the player has selected the first first card in the array
+//        game.whoWins()
+//
+//
+//    }
+
+
 }

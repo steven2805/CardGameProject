@@ -18,14 +18,13 @@ public class Game {
        this.player1 = new Player(null,null);
         this.computer = new Player(null,null);
 
-
     }
 
     public void setupHands() {
         deck.getDeck();
         int counter = 0;
         while (counter < 6) {
-            int temp = randomNumber();
+            int temp = randomNumber(deck.countDeck());
             holding[counter] = temp;
             counter++;
         }
@@ -41,12 +40,11 @@ public class Game {
         System.arraycopy(holding,player1hand.length,player2hand,0, player2hand.length);
 
         this.player1 = new Player("Steven",player1hand);
-        this.computer = new Player("computer",player2hand);
+        this.computer = new Player("MasterRace",player2hand);
     }
 
-    public String[] getPlayersCardNames(int playercardid[]){
-
-    String[] array = new String[3];
+    public String[] getCardNames(int playercardid[]){
+        String[] array = new String[3];
 //    Card deck = new Card();
         int count = 0;
         for(int cardnumber: playercardid) {
@@ -57,19 +55,23 @@ public class Game {
         return array;
     }
 
+    public int computerPickACard(){
+        return randomNumber(3);
+    }
 
-    public String whoWins(Player player1,Player computer){
-         int player1handtotal = player1.hand[0] + player1.hand[1];
-         int computerhandtotal = computer.hand[0] + computer.hand[1];
 
-        if(player1handtotal == computerhandtotal) return "draw";
-        else if(player1handtotal > computerhandtotal)return player1.name + " wins";
+    public String whoWins(int playercard, int computercard){
+        int player = player1.hand[1];
+        int cmp = computer.hand[1];
+
+        if(player == cmp) return "draw";
+        else if(player > cmp)return player1.name + " wins";
         else return "You lose play again";
 
     }
 
 
-    private int randomNumber() {
+    private int randomNumber(int randomlimit) {
         try {
             TimeUnit.MILLISECONDS.sleep(1);
         } catch (InterruptedException e) {
@@ -77,7 +79,7 @@ public class Game {
         }
         Random rand = new Random();
         rand.setSeed(System.currentTimeMillis());
-        int temp = rand.nextInt(7); //<<<<<<<<<<<<<<<<increase this steven
+        int temp = rand.nextInt(randomlimit); //<<<<<<<<<<<<<<<<increase this steven
         return temp;
     }
 }

@@ -20,8 +20,9 @@ public class Gametest {
    @Before
    public void before(){
        game = new Game();
-       int[] array1 = new int[]{10,8};
-       int[] array2 = new int[]{2,6};
+       game.setupHands();
+       int[] array1 = new int[]{3,8,3};
+       int[] array2 = new int[]{2,6,1};
        this.player1 = new Player("Steven",array1);
        this.computer = new Player("masterrace",array2);
 
@@ -30,12 +31,16 @@ public class Gametest {
     @Test
     public void checkingThePlayersHand(){
         game.setupHands();
-        game.getPlayersCards(game.player1.hand);
+        game.getCardNames(game.player1.hand);
         assertNotNull(game.player1.hand);
     }
 
     @Test
     public void checkWhoWins(){
-        assertEquals("Steven wins",game.whoWins(player1,computer));
+        int[] array1 = new int[]{3,8,3};
+        int[] array2 = new int[]{2,6,1};
+        this.player1 = new Player("Steven",array1);
+        this.computer = new Player("masterrace",array2);
+        assertEquals("Steven wins",game.whoWins(this.player1.hand[0],this.computer.hand[1]));
     }
 }

@@ -4,15 +4,7 @@
         "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/listview_start_code/CardGameProject/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
-        "source": "/Users/stevenmacdonald/AndroidStudioProjects/listview_start_code/CardGameProject/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
         "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/listview_start_code/CardGameProject/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher_round.png",
-        "source": "/Users/stevenmacdonald/AndroidStudioProjects/listview_start_code/CardGameProject/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     }
 ]

@@ -1,5 +1,8 @@
 package com.example.stevenmacdonald.cardgameproject;
+import android.content.ClipData;
+
 import java.util.HashMap;
+import java.util.List;
 
 
 public class Card {
@@ -16,6 +19,14 @@ public class Card {
 
     public String getCard(int value) {
         return deck.get(value);
+    }
+
+    public int countDeck(){
+        int total = 0;
+        for (String something : deck.values()) {
+            total ++;
+        }
+        return total;
     }
 
     public void populateDeck()
