@@ -11,17 +11,17 @@ import static junit.framework.Assert.assertEquals;
 public class CardTest {
 
     Card card;
-    Game game;
+
 
     @Before
     public void before(){
         card = new Card();
-        game = new Game();
+        Game.getInstance().setupHands();
     }
 
     @Test
     public void testingTheCardAreMade(){
-        game.setupHands();
+        Game.getInstance().setupHands();
         String result = card.getCard(1);
         assertEquals("testing",result);
     }

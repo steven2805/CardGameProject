@@ -33,13 +33,13 @@ public class Card {
     {
         deck.put(1,"charmander");
         deck.put(2,"metapod");
-        deck.put(3,"testing3");
-        deck.put(4,"testing4");
-        deck.put(5,"testing5");
-        deck.put(6,"testing6");
-        deck.put(7,"testing7");
-        deck.put(8,"testing8");
-        deck.put(9,"testing9");
+        deck.put(3,"placeholderball");
+        deck.put(4,"placeholderball");
+        deck.put(5,"placeholderball");
+        deck.put(6,"placeholderball");
+        deck.put(7,"placeholderball");
+        deck.put(8,"placeholderball");
+        deck.put(9,"placeholderball");
     }
 
 }

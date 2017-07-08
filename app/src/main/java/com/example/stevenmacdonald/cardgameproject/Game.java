@@ -10,10 +10,10 @@ public class Game {
 
     private int[] holding = new int[6];
     public Player player1, computer;
-//    public Player computer;
     public Card card;
     Card deck = new Card();
     public int playerScore,computerScore;
+
 
     public static Game getInstance(){
         if(instance == null){
@@ -49,7 +49,6 @@ public class Game {
 //              (src   , src-offset  , dest , offset, count)
         System.arraycopy(holding,0,player1hand,0,player1hand.length);
         System.arraycopy(holding,player1hand.length,player2hand,0, player2hand.length);
-
         this.player1 = new Player("Steven",player1hand);
         this.computer = new Player("MasterRace",player2hand);
     }
@@ -67,25 +66,28 @@ public class Game {
     }
 
 // return a number between 1-3 for the computer to put against the player..
-    public int computerPickACard(){
-        int[] array = new int[]{1,2,3};
-        int rand = randomNumber(3);
-        int returnvalue = rand;
-        if(array[rand] == 9999)
-        {
-            computerPickACard();
-        }
-        array[rand] = 9999;
-        return returnvalue;
-    }
+//    public int computerPickACard(){
+//        int[] array = new int[]{1,2,3};
+//        int rand = randomNumber(3);
+//        int returnvalue = rand;
+//        if(array[rand] == 9999)
+//        {
+//            computerPickACard();
+//        }
+//        array[rand] = 9999;
+//        return returnvalue;
+//    }
 
 // simple comparison of who has the highest numbered card
     public String whoWins(int playercard, int computercard){
         int player = playercard;
         int cmp = computercard;
-        if(player == cmp)
-        { return "draw";}
-        else if(player > cmp){return player1.name + " wins";}
+        if(player == cmp) {
+            return "draw";
+        }
+        else if(player > cmp){
+            return player1.name + " wins";
+        }
         else return "You lose play again";
 
     }
