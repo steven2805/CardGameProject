@@ -565,12 +565,13 @@ int drawable notification_bg_low_pressed 0x7f02005b
 int drawable notification_bg_normal 0x7f02005c
 int drawable notification_bg_normal_pressed 0x7f02005d
 int drawable notification_icon_background 0x7f02005e
-int drawable notification_template_icon_bg 0x7f020062
-int drawable notification_template_icon_low_bg 0x7f020063
+int drawable notification_template_icon_bg 0x7f020063
+int drawable notification_template_icon_low_bg 0x7f020064
 int drawable notification_tile_bg 0x7f02005f
 int drawable notify_panel_notification_icon_bg 0x7f020060
 int drawable placeholderball 0x7f020061
-int id StartGameButton 0x7f0b0066
+int drawable startgamefont 0x7f020062
+int id StartGameButton 0x7f0b0067
 int id action0 0x7f0b006b
 int id action_bar 0x7f0b004f
 int id action_bar_activity_content 0x7f0b0000
@@ -595,7 +596,7 @@ int id add 0x7f0b001b
 int id alertTitle 0x7f0b0043
 int id all 0x7f0b000e
 int id always 0x7f0b0025
-int id answerTextView 0x7f0b0067
+int id answerTextView 0x7f0b0066
 int id basic 0x7f0b000f
 int id beginning 0x7f0b0022
 int id bottom 0x7f0b002a

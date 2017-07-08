@@ -4,19 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundmain">
+    android:background="@drawable/backgroundmain"><![CDATA[
     tools:context="com.example.stevenmacdonald.cardgameproject.StartGameActivity">
 
 
-    <Button
-        android:id="@+id/StartGameButton"
-        android:layout_width="105dp"
-        android:layout_height="84dp"
-        android:onClick="buttonClicked"
-        android:text="@string/start_game"
-        android:layout_marginStart="84dp"
-        tools:layout_editor_absoluteX="248dp"
-        tools:layout_editor_absoluteY="41dp" />
+    ]]>
 
     <TextView
         android:id="@+id/answerTextView"
@@ -24,18 +16,20 @@
         android:layout_height="55dp"
         android:text="TextView"
         android:textSize="20sp"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/StartGameButton"
         android:layout_marginLeft="136dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="136dp" />
+        android:layout_marginStart="136dp"
+        tools:layout_editor_absoluteY="-63dp" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/StartGameButton"
         android:layout_width="292dp"
         android:layout_height="64dp"
-        app:srcCompat="@drawable/startgamefont"
-        tools:layout_editor_absoluteY="308dp"
-        tools:layout_editor_absoluteX="61dp" />
+        android:layout_marginBottom="154dp"
+        android:layout_marginLeft="61dp"
+        android:onClick="buttonClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/startgamefont" />
 
 </android.support.constraint.ConstraintLayout>

@@ -2298,14 +2298,15 @@ containing a value of this type.
         public static final int notification_bg_normal=0x7f02005c;
         public static final int notification_bg_normal_pressed=0x7f02005d;
         public static final int notification_icon_background=0x7f02005e;
-        public static final int notification_template_icon_bg=0x7f020062;
-        public static final int notification_template_icon_low_bg=0x7f020063;
+        public static final int notification_template_icon_bg=0x7f020063;
+        public static final int notification_template_icon_low_bg=0x7f020064;
         public static final int notification_tile_bg=0x7f02005f;
         public static final int notify_panel_notification_icon_bg=0x7f020060;
         public static final int placeholderball=0x7f020061;
+        public static final int startgamefont=0x7f020062;
     }
     public static final class id {
-        public static final int StartGameButton=0x7f0b0066;
+        public static final int StartGameButton=0x7f0b0067;
         public static final int action0=0x7f0b006b;
         public static final int action_bar=0x7f0b004f;
         public static final int action_bar_activity_content=0x7f0b0000;
@@ -2330,7 +2331,7 @@ containing a value of this type.
         public static final int alertTitle=0x7f0b0043;
         public static final int all=0x7f0b000e;
         public static final int always=0x7f0b0025;
-        public static final int answerTextView=0x7f0b0067;
+        public static final int answerTextView=0x7f0b0066;
         public static final int basic=0x7f0b000f;
         public static final int beginning=0x7f0b0022;
         public static final int bottom=0x7f0b002a;

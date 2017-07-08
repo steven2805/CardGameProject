@@ -6,12 +6,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class StartGameActivity extends AppCompatActivity {
 
     TextView answerTextview;
-    Button StartGameButton;
+    ImageButton StartGameButton;
     Player player1;
     Player computer;
 
@@ -21,7 +22,7 @@ public class StartGameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start_game);
 
         answerTextview = (TextView) findViewById(R.id.answerTextView);
-        StartGameButton = (Button) findViewById(R.id.StartGameButton);
+        StartGameButton = (ImageButton) findViewById(R.id.StartGameButton);
     }
 
     public void buttonClicked(View button){
