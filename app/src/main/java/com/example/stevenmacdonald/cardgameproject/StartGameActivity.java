@@ -6,14 +6,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 public class StartGameActivity extends AppCompatActivity {
 
     TextView answerTextview;
     Button StartGameButton;
-    //Game game;
     Player player1;
     Player computer;
 
@@ -28,22 +26,9 @@ public class StartGameActivity extends AppCompatActivity {
 
     public void buttonClicked(View button){
         Log.d(getClass().toString(), "Button is working");
-        Game.getInstance().setupHands();
-        //game.setupHands();
-//        player1 = game.player1;
-//        computer = game.computer;
-//        String result = game.whoWins(player1,computer);
-//        answerTextview.setText(result);
-        String[] array = new String[3];
-        array[0] = "metapod";
-        array[1] = "metapod";
-        array[2] = "charmander";
+        Game.getInstance().setupGame();
 
-//        array = game.getPlayersCardNames(game.player1.hand);
         Intent intent = new Intent(this, BattleActivity.class);
-        intent.putExtra("image1",array[0]);
-        intent.putExtra("image2",array[1]);
-        intent.putExtra("image3",array[2]);
         startActivity(intent);
     }
 }

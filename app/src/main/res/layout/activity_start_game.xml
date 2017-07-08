@@ -30,4 +30,12 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="136dp" />
 
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="292dp"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/startgamefont"
+        tools:layout_editor_absoluteY="308dp"
+        tools:layout_editor_absoluteX="61dp" />
+
 </android.support.constraint.ConstraintLayout>

@@ -1,45 +1,35 @@
 package com.example.stevenmacdonald.cardgameproject;
-import android.content.ClipData;
 
-import java.util.HashMap;
-import java.util.List;
-
+/**
+ * Created by stevenmacdonald on 08/07/2017.
+ */
 
 public class Card {
+    private int value;
+    private String name;
+    private int resource;
+    private int id;
 
-    public HashMap<Integer,String> deck = new HashMap();
-
-    public Card() {
-        populateDeck();
+    public Card(int id, int value, String name, int resource){
+        this.value = value;
+        this.name = name;
+        this.resource = resource;
+        this.id = id;
     }
 
-    public HashMap<Integer, String> getDeck() {
-        return deck;
+    public int getValue() {
+        return value;
     }
 
-    public String getCard(int value) {
-        return deck.get(value);
+    public String getName() {
+        return name;
     }
 
-    public int countDeck(){
-        int total = 0;
-        for (String something : deck.values()) {
-            total ++;
-        }
-        return total;
+    public int getResource() {
+        return resource;
     }
 
-    public void populateDeck()
-    {
-        deck.put(1,"charmander");
-        deck.put(2,"metapod");
-        deck.put(3,"placeholderball");
-        deck.put(4,"placeholderball");
-        deck.put(5,"placeholderball");
-        deck.put(6,"placeholderball");
-        deck.put(7,"placeholderball");
-        deck.put(8,"placeholderball");
-        deck.put(9,"placeholderball");
+    public int getId() {
+        return id;
     }
-
 }

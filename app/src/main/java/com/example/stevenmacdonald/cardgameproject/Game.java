@@ -1,5 +1,6 @@
 package com.example.stevenmacdonald.cardgameproject;
 
+import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -10,8 +11,7 @@ public class Game {
 
     private int[] holding = new int[6];
     public Player player1, computer;
-    public Card card;
-    Card deck = new Card();
+    public Deck deck;
     public int playerScore,computerScore;
 
 
@@ -24,23 +24,23 @@ public class Game {
 
 
     private Game() {
-       this.player1 = new Player(null,null);
+        this.player1 = new Player(null,null);
         this.computer = new Player(null,null);
-        this.playerScore = 0;
-        this.computerScore = 0;
-
+        this.deck = new Deck();
     }
 // creates an array of 6 cards
-    public void setupHands() {
-        deck.getDeck();
+    public void setupGame() {
+        this.playerScore = 0;
+        this.computerScore = 0;
         int counter = 0;
         while (counter < 6) {
-            int temp = randomNumber(deck.countDeck());
+            int temp = deck.getDeck().get(randomNumber(deck.countDeck())).getId();
             holding[counter] = temp;
             counter++;
         }
         setupPlayers();
     }
+
 
 // Self-explanatory
     public void setupPlayers(){
@@ -58,7 +58,7 @@ public class Game {
         String[] array = new String[3];
         int count = 0;
         for(int cardnumber: playercardid) {
-            String cardtitle = deck.getCard(cardnumber);
+            String cardtitle = deck.getCard(cardnumber).getName();
             array[count] = cardtitle;
             count ++;
         }
@@ -78,7 +78,7 @@ public class Game {
 //        return returnvalue;
 //    }
 
-// simple comparison of who has the highest numbered card
+// simple comparison of who has the highest numbered deck
     public String whoWins(int playercard, int computercard){
         int player = playercard;
         int cmp = computercard;
@@ -86,10 +86,24 @@ public class Game {
             return "draw";
         }
         else if(player > cmp){
+            playerScore ++;
             return player1.name + " wins";
         }
-        else return "You lose play again";
+        else {
+            computerScore++;
+            return "You lose play again";
+        }
 
+    }
+
+    public Player whoWinsTheGame(){
+        if(playerScore == 1){
+            return player1;
+        }else if(computerScore == 1){
+            return computer;
+        }else{
+            return null;
+        }
     }
 
 // random number generation (takes a value in to set the maximum value possible)
@@ -101,7 +115,6 @@ public class Game {
         }
         Random rand = new Random();
         rand.setSeed(System.currentTimeMillis());
-        int temp = rand.nextInt(randomlimit); //<<<<<<<<<<<<<<<<increase this steven
-        return temp;
+        return rand.nextInt(randomlimit);
     }
 }

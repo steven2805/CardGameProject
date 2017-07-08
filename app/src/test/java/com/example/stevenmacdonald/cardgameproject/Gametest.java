@@ -1,7 +1,5 @@
 package com.example.stevenmacdonald.cardgameproject;
 
-import android.util.Range;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,14 +9,14 @@ import static junit.framework.Assert.assertNotNull;
 
 public class Gametest {
 
-    Card card;
+    Deck deck;
     Player player1;
     Player computer;
 
 
    @Before
    public void before(){
-       Game.getInstance().setupHands();
+       Game.getInstance().setupGame();
        int[] array1 = new int[]{3,8,3};
        int[] array2 = new int[]{2,6,1};
        this.player1 = new Player("Steven",array1);

@@ -14,9 +14,10 @@ import java.io.File;
 
 public class BattleActivity extends AppCompatActivity {
 
+
     private ImageButton image1Button, image2Button, image3Button;
     //Game game;
-    Player player;
+    //Player player;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,19 @@ public class BattleActivity extends AppCompatActivity {
         image1Button = (ImageButton) findViewById(R.id.imageButton);
         image2Button = (ImageButton) findViewById(R.id.imageButton2);
         image3Button = (ImageButton) findViewById(R.id.imageButton3);
-        String image1 = getIntent().getStringExtra("image1");
+
+        int card1Value = Game.getInstance().player1.hand[0];
+        int card1Resource = Game.getInstance().deck.getCard(card1Value).getResource();
+        image1Button.setImageResource(card1Resource);
+        int card2Value = Game.getInstance().player1.hand[1];
+        int card2Resource = Game.getInstance().deck.getCard(card2Value).getResource();
+        image2Button.setImageResource(card2Resource);
+
+        int card3Value = Game.getInstance().player1.hand[2];
+        int card3Resource = Game.getInstance().deck.getCard(card3Value).getResource();
+        image3Button.setImageResource(card3Resource);
+
+        /*String image1 = getIntent().getStringExtra("image1");
         String image2 = getIntent().getStringExtra("image2");
         String image3 = getIntent().getStringExtra("image3");
 
@@ -43,21 +56,30 @@ public class BattleActivity extends AppCompatActivity {
 
         image1Button.setImageDrawable(resources.getDrawable(resourceId));
         image2Button.setImageDrawable(resources.getDrawable(resource1Id));
-        image3Button.setImageDrawable(resources.getDrawable(resource2Id));
+        image3Button.setImageDrawable(resources.getDrawable(resource2Id));*/
     }
+
+
 
     public void onbuttonclick1(View view){
         Log.d(getClass().toString(), "Testing the button 1 is working");
 //        int computercard = 0;
 //        int computercard = game.computerPickACard();
-//        selecting this means the player has selected the first card in the array
-        String result = Game.getInstance().whoWins(Game.getInstance().player1.hand[0],Game.getInstance().computer.hand[0]);
+//        selecting this means the player has selected the first deck in the array
+        int player1CardValue = Game.getInstance().deck.getCard(Game.getInstance().player1.hand[0]).getValue();
+        int computerCardValue = Game.getInstance().deck.getCard(Game.getInstance().computer.hand[0]).getValue();
+        String result = Game.getInstance().whoWins(player1CardValue, computerCardValue);
         Toast.makeText(this, result, Toast.LENGTH_LONG).show();
-        String placeholder = "placeholderball";
-        Resources resources = getApplicationContext().getResources();
-        final int resource99Id = resources.getIdentifier(placeholder, "drawable",
-                getApplicationContext().getPackageName());
-        image1Button.setImageDrawable(resources.getDrawable(resource99Id));
+        Player winner = Game.getInstance().whoWinsTheGame();
+        if(winner != null){
+            finish();
+            Toast.makeText(this, winner.name + " is the winner", Toast.LENGTH_LONG).show();
+        }
+//        String placeholder = "placeholderball";
+//        Resources resources = getApplicationContext().getResources();
+//        final int resource99Id = resources.getIdentifier(placeholder, "drawable",
+//                getApplicationContext().getPackageName());
+//        image1Button.setImageDrawable(resources.getDrawable(resource99Id));
 //        view.setVisibility(View.GONE);
 
 
