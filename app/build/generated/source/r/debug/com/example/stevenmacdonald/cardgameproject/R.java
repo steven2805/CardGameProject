@@ -2371,7 +2371,7 @@ containing a value of this type.
         public static final int imageView=0x7f0b0063;
         public static final int imageView2=0x7f0b0064;
         public static final int imageView3=0x7f0b0065;
-        public static final int imageView4=0x7f0b006e;
+        public static final int imageView4=0x7f0b006d;
         public static final int info=0x7f0b007c;
         public static final int line1=0x7f0b0081;
         public static final int line3=0x7f0b0083;
@@ -2436,7 +2436,7 @@ containing a value of this type.
         public static final int toggleButton=0x7f0b0067;
         public static final int top=0x7f0b002b;
         public static final int topPanel=0x7f0b0041;
-        public static final int tutorialSwitch=0x7f0b006d;
+        public static final int tutorialCheckBox=0x7f0b006e;
         public static final int up=0x7f0b0008;
         public static final int useLogo=0x7f0b001a;
         public static final int withText=0x7f0b0029;

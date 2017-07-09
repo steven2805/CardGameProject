@@ -27,7 +27,20 @@ public class Game {
         this.player1 = new Player(null,null);
         this.computer = new Player(null,null);
         this.deck = new Deck();
+        this.tutorial = false;
     }
+
+
+
+    public void setTutorial(boolean value){
+        this.tutorial = value;
+    }
+
+    public boolean getTutorialStatues(){
+        return this.tutorial;
+    }
+
+
 // creates an array of 6 cards from the deck
     public void setupGame() {
         this.playerScore = 0;

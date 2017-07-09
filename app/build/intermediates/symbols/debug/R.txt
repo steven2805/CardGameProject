@@ -636,7 +636,7 @@ int id image 0x7f0b0031
 int id imageView 0x7f0b0063
 int id imageView2 0x7f0b0064
 int id imageView3 0x7f0b0065
-int id imageView4 0x7f0b006e
+int id imageView4 0x7f0b006d
 int id info 0x7f0b007c
 int id line1 0x7f0b0081
 int id line3 0x7f0b0083
@@ -701,7 +701,7 @@ int id title_template 0x7f0b0042
 int id toggleButton 0x7f0b0067
 int id top 0x7f0b002b
 int id topPanel 0x7f0b0041
-int id tutorialSwitch 0x7f0b006d
+int id tutorialCheckBox 0x7f0b006e
 int id up 0x7f0b0008
 int id useLogo 0x7f0b001a
 int id withText 0x7f0b0029
