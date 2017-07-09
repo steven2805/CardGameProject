@@ -53,7 +53,7 @@ public class Game {
         this.computer = new Player("MasterRace",player2hand);
     }
 
-// recovering the names of the cards that the player has
+//******* REDUNDANT CODE FOR TESTING*********
     public String[] getCardNames(int playercardid[]){
         String[] array = new String[3];
         int count = 0;
@@ -66,7 +66,7 @@ public class Game {
     }
 
 
-// simple comparison of who has the highest numbered deck
+// simple comparison of who has the highest numbered CARD
     public String whoWins(int playercard, int computercard){
         int player = playercard;
         int cmp = computercard;

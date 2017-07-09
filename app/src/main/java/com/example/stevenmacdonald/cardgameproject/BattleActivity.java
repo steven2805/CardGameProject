@@ -1,12 +1,14 @@
 package com.example.stevenmacdonald.cardgameproject;
 
 
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +19,7 @@ public class BattleActivity extends AppCompatActivity {
 
     private ImageButton image1Button, image2Button, image3Button;
     private TextView card1TextView, card2TextView, card3TextView;
+    private ImageView ToolTip;
 
 
     @Override
@@ -29,6 +32,7 @@ public class BattleActivity extends AppCompatActivity {
         card1TextView = (TextView) findViewById(R.id.Card1TextView);
         card2TextView = (TextView) findViewById(R.id.card2TextView);
         card3TextView = (TextView) findViewById(R.id.card3TextView);
+        ToolTip = (ImageView) findViewById(R.id.ToolTip);
 
         int card1ID = Game.getInstance().player1.hand[0];
         int card1Resource = Game.getInstance().deck.getCard(card1ID).getResource();
@@ -53,6 +57,7 @@ public class BattleActivity extends AppCompatActivity {
 
 
     public void onButtonClick1(View view){
+        ToolTip.setVisibility(View.GONE);
         Log.d(getClass().toString(), "Testing the button 1 is working");
         int player1CardValue = Game.getInstance().deck.getCard(Game.getInstance().player1.hand[0]).getValue();
         int computerCardValue = Game.getInstance().deck.getCard(Game.getInstance().computer.hand[0]).getValue();
@@ -111,6 +116,8 @@ public class BattleActivity extends AppCompatActivity {
 //        view.setVisibility(View.GONE);
 
     }
+
+
 
 
 

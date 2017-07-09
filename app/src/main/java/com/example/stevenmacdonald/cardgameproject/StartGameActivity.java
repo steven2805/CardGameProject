@@ -13,8 +13,6 @@ public class StartGameActivity extends AppCompatActivity {
 
     TextView answerTextview;
     ImageButton StartGameButton;
-    Player player1;
-    Player computer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
