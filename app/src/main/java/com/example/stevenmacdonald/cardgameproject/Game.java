@@ -12,6 +12,7 @@ public class Game {
     public Player player1, computer;
     public Deck deck;
     public int playerScore,computerScore,drawCounter;
+    public boolean tutorial;
 
 
     public static Game getInstance(){
