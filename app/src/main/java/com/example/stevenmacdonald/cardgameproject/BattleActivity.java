@@ -18,7 +18,7 @@ public class BattleActivity extends AppCompatActivity {
     private int playerCard1Resource, playerCard2Resource, playerCard3Resource;
     private int computerCard1Resource,computerCard2Resource,computerCard3Resource;
     private TextView card1TextView, card2TextView, card3TextView;
-    private ImageView ToolTip,playerBattleImg,computerBattleImg;
+    private ImageView ToolTip,playerBattleImg,computerBattleImg,guideimage,tutorialpt1img;
 
 
     @Override
@@ -34,6 +34,8 @@ public class BattleActivity extends AppCompatActivity {
         playerBattleImg = (ImageView) findViewById(R.id.playerBattleImg);
         computerBattleImg = (ImageView) findViewById(R.id.computerBattleImg);
         ToolTip = (ImageView) findViewById(R.id.ToolTip);
+        guideimage = (ImageView) findViewById(R.id.guideimg1);
+        tutorialpt1img = (ImageView) findViewById(R.id.tutorialpt1img);
         checkIfTutorialIsOnOrOff();
 
 // Player getting the card information for card 1
@@ -152,7 +154,20 @@ public class BattleActivity extends AppCompatActivity {
         boolean tutValue = Game.getInstance().getTutorialStatues();
         if(tutValue == false){
             ToolTip.setVisibility(View.GONE);
-        }else ToolTip.setVisibility(View.VISIBLE);
+            guideimage.setVisibility(View.GONE);
+            tutorialpt1img.setVisibility((View.GONE));
+        }else {
+            ToolTip.setVisibility(View.VISIBLE);
+            image1Button.setVisibility(View.INVISIBLE);
+            image2Button.setVisibility(View.INVISIBLE);
+            image3Button.setVisibility(View.INVISIBLE);
+            runTutorial();
+        }
+
+    }
+
+    public void runTutorial(){
+
     }
 
 
