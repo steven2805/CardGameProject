@@ -168,10 +168,12 @@ public class BattleActivity extends AppCompatActivity {
 
     public void runTutorial(){
 
+
     }
 
-
-
+    public void tutorialImgDisappearOnClick(View view) {
+        tutorialpt1img.setVisibility(View.GONE);
+    }
 
 
 }
