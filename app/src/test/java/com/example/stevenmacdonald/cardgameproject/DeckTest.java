@@ -29,4 +29,18 @@ public class DeckTest {
     public void checkCardValue(){
         assertEquals(5,deck.getCard(1).getValue());
     }
+
+    @Test
+    public void checkCardID(){
+        assertEquals(2,deck.getCard(2).getId());
+    }
 }
+
+
+
+
+
+
+
+
+

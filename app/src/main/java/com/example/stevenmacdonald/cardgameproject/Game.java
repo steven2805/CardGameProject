@@ -22,15 +22,12 @@ public class Game {
         return instance;
     }
 
-
     private Game() {
         this.player1 = new Player(null,null);
         this.computer = new Player(null,null);
         this.deck = new Deck();
         this.tutorial = false;
     }
-
-
 
     public void setTutorial(boolean value){
         this.tutorial = value;
@@ -67,7 +64,7 @@ public class Game {
         this.computer = new Player("MasterRace",player2hand);
     }
 
-//******* REDUNDANT CODE FOR TESTING*********
+//******* REDUNDANT CODE FOR TESTING*********//
     public String[] getCardNames(int playercardid[]){
         String[] array = new String[3];
         int count = 0;
@@ -98,14 +95,17 @@ public class Game {
         }
 
     }
-
+// Logic here needs sorting as it issues the player as the player as a winner in the event of a draw
     public Player whoWinsTheGame(){
-        if(playerScore + computerScore + drawCounter == 3){
+        if(playerScore + computerScore + drawCounter == 3) {
             if (playerScore > computerScore) {
-                return player1;}
-            else
-                {return computer;}
+                return player1;
+            } else if (playerScore == computerScore) {
+                return player1;
+            } else {
+                return computer;
             }
+        }
         else if(playerScore == 3){
             return player1;
         }else if(computerScore == 3){

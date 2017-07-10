@@ -1,15 +1,15 @@
 [
     {
-        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_spinner_textfield_background_material.xml"
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
         "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_seekbar_track_material.xml"
     },
     {
-        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_list_selector_holo_light.xml"
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
@@ -20,8 +20,16 @@
         "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_ic_clear_material.xml"
     },
     {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/pidgeot.png",
+        "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/pidgeot.png"
+    },
+    {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
         "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/guide02.png",
+        "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/guide02.png"
     },
     {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
@@ -68,16 +76,32 @@
         "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_vector_test.xml"
     },
     {
-        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
-        "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_item_background_holo_light.xml"
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/arcanine.png",
+        "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/arcanine.png"
     },
     {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/pixalspeechbubble1.png",
         "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/pixalspeechbubble1.png"
     },
     {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/losing.png",
+        "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/losing.png"
+    },
+    {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/blastoise.png",
+        "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/blastoise.png"
+    },
+    {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/charmander.png",
         "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/charmander.png"
+    },
+    {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/winning.png",
+        "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/winning.png"
     },
     {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
@@ -88,12 +112,28 @@
         "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_textfield_search_material.xml"
     },
     {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/dugtrio.png",
+        "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/dugtrio.png"
+    },
+    {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/pikachu.png",
+        "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/pikachu.png"
+    },
+    {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
         "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
         "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/pixalspeechbubble2.png",
+        "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/pixalspeechbubble2.png"
+    },
+    {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/paras.png",
+        "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/paras.png"
     },
     {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
@@ -110,6 +150,10 @@
     {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/placeholderball.png",
         "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/placeholderball.png"
+    },
+    {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/draw.png",
+        "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/draw.png"
     },
     {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
@@ -132,12 +176,20 @@
         "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/sandshrew.png",
+        "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/sandshrew.png"
+    },
+    {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
         "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/notification_bg.xml"
     },
     {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
         "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/zubat.png",
+        "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/zubat.png"
     },
     {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/backgroundbattle.png",
@@ -176,6 +228,10 @@
         "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/persian.png",
+        "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/persian.png"
+    },
+    {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
         "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_switch_thumb_material.xml"
     },
@@ -190,6 +246,10 @@
     {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
         "source": "/Users/stevenmacdonald/.android/build-cache/4dbdf4d8f721891dde4a5eff02f38bc725a80db2/output/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/pixalspeechbubble02.png",
+        "source": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/res/drawable/pixalspeechbubble02.png"
     },
     {
         "merged": "/Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
