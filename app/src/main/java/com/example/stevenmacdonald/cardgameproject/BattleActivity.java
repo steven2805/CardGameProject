@@ -21,7 +21,7 @@ public class BattleActivity extends AppCompatActivity {
     private int computerCard1Resource,computerCard2Resource,computerCard3Resource;
     private TextView card1TextView, card2TextView, card3TextView;
     private ImageView ToolTip,playerBattleImg,computerBattleImg,guideimage,guide2img,tutorialpt1img,tutorialpt2Img;
-    public boolean ruleswap;
+
 
 
 
@@ -43,6 +43,7 @@ public class BattleActivity extends AppCompatActivity {
         tutorialpt1img = (ImageView) findViewById(R.id.tutorialpt1img);
         tutorialpt2Img = (ImageView) findViewById(R.id.tutorialpt2img);
         checkIfTutorialIsOnOrOff();
+        shouldDisplayRuleChangeCheckBox();
 
 // Player getting the card information for card 1
         int playerCardID = Game.getInstance().player1.hand[0];
@@ -92,6 +93,9 @@ public class BattleActivity extends AppCompatActivity {
         boolean checkBoxStatues = checkRuleChange();
         String result = Game.getInstance().whoWins(player1CardValue, computerCardValue,checkBoxStatues);
 
+
+        shouldDisplayRuleChangeCheckBox();
+
         if(result == "You lose play again"){
             image1Button.setImageResource(R.drawable.losing);
         } else if (result == "draw"){
@@ -124,7 +128,7 @@ public class BattleActivity extends AppCompatActivity {
         int computerCardValue = Game.getInstance().deck.getCard(Game.getInstance().computer.hand[1]).getValue();
         boolean checkBoxStatues = checkRuleChange();
         String result = Game.getInstance().whoWins(player1CardValue, computerCardValue,checkBoxStatues);
-
+        shouldDisplayRuleChangeCheckBox();
         if(result == "You lose play again"){
             image2Button.setImageResource(R.drawable.losing);
         } else if (result == "draw"){
@@ -157,7 +161,7 @@ public class BattleActivity extends AppCompatActivity {
         int computerCardValue = Game.getInstance().deck.getCard(Game.getInstance().computer.hand[2]).getValue();
         boolean checkBoxStatues = checkRuleChange();
         String result = Game.getInstance().whoWins(player1CardValue, computerCardValue,checkBoxStatues);
-
+        shouldDisplayRuleChangeCheckBox();
 
         if(result == "You lose play again"){
             image3Button.setImageResource(R.drawable.losing);
@@ -170,6 +174,7 @@ public class BattleActivity extends AppCompatActivity {
         image3Button.setClickable(false);
 
         Toast.makeText(this, result, Toast.LENGTH_LONG).show();
+
         Player winner = Game.getInstance().whoWinsTheGame();
         if(winner != null){
             finish();
@@ -230,6 +235,15 @@ public class BattleActivity extends AppCompatActivity {
 
     }
 
+    public void shouldDisplayRuleChangeCheckBox(){
+        CheckBox ruleswap = (CheckBox) findViewById(R.id.ruleSwapCheck);
+        if (Game.getInstance().player1.powerup > 0){
+            ruleswap.setVisibility(View.VISIBLE);}
+        else {
+            ruleswap.setVisibility(View.GONE);
+        }
+    }
+
     public boolean checkRuleChange() {
         CheckBox ruleswap = (CheckBox) findViewById(R.id.ruleSwapCheck);
         setActivityBackgroundColor(ruleswap.isChecked());
@@ -239,8 +253,10 @@ public class BattleActivity extends AppCompatActivity {
     public void setActivityBackgroundColor(boolean switchbackground) {
         ConstraintLayout ll = (ConstraintLayout) findViewById(R.id.battleactivity);
         if(switchbackground == true) {
+            Game.getInstance().player1.powerup = 0;
             ll.setBackgroundResource(R.drawable.redbackground);
         }else {
+
             ll.setBackgroundResource(R.drawable.backgroundbattle);
         }
     }

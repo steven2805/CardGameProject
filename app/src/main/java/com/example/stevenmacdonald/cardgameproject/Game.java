@@ -62,6 +62,8 @@ public class Game {
         System.arraycopy(holding,player1hand.length,player2hand,0, player2hand.length);
         this.player1 = new Player("Steven",player1hand);
         this.computer = new Player("MasterRace",player2hand);
+        setupPowerUps(player1);
+        setupPowerUps(computer);
     }
 
 //******* REDUNDANT CODE FOR TESTING*********//
@@ -75,6 +77,17 @@ public class Game {
         }
         return array;
     }
+
+    public void setupPowerUps(Player player){
+        int rand = randomNumber(3);
+        if(rand == 1) {
+            player.powerup = 1;
+        }else{
+            player.powerup = 0;
+        }
+
+    }
+
 
 
 // simple comparison of who has the highest numbered CARD
@@ -102,7 +115,7 @@ public class Game {
                 return player1.name + " wins";
             } else {
                 computerScore++;
-                return "You lost this battle";
+                return "You lost play battle";
             }
         }
 
