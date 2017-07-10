@@ -78,20 +78,32 @@ public class Game {
 
 
 // simple comparison of who has the highest numbered CARD
-    public String whoWins(int playercard, int computercard){
+    public String whoWins(int playercard, int computercard, boolean ruleswap){
         int player = playercard;
         int cmp = computercard;
-        if(player == cmp) {
-            drawCounter ++;
-            return "draw";
-        }
-        else if(player > cmp){
-            playerScore ++;
-            return player1.name + " wins";
-        }
-        else {
-            computerScore++;
-            return "You lose play again";
+        if(ruleswap == false) {
+
+            if (player == cmp) {
+                drawCounter++;
+                return "draw";
+            } else if (player > cmp) {
+                playerScore++;
+                return player1.name + " wins";
+            } else {
+                computerScore++;
+                return "You lose play again";
+            }
+        }else{
+            if (player == cmp) {
+                drawCounter++;
+                return "draw";
+            } else if (player < cmp) {
+                playerScore++;
+                return player1.name + " wins";
+            } else {
+                computerScore++;
+                return "You lost this battle";
+            }
         }
 
     }

@@ -17,7 +17,6 @@ public class StartGameActivity extends AppCompatActivity {
 
     TextView answerTextview;
     ImageButton StartGameButton;
-//    Switch tutorialSwitch;
     CheckBox tutorialCheckBox;
     public boolean checkBoxStatues;
 

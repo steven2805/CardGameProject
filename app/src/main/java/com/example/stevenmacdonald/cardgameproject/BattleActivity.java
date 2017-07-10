@@ -1,11 +1,11 @@
 package com.example.stevenmacdonald.cardgameproject;
 
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
+import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,6 +21,7 @@ public class BattleActivity extends AppCompatActivity {
     private int computerCard1Resource,computerCard2Resource,computerCard3Resource;
     private TextView card1TextView, card2TextView, card3TextView;
     private ImageView ToolTip,playerBattleImg,computerBattleImg,guideimage,guide2img,tutorialpt1img,tutorialpt2Img;
+    public boolean ruleswap;
 
 
 
@@ -41,8 +42,6 @@ public class BattleActivity extends AppCompatActivity {
         guide2img = (ImageView) findViewById(R.id.guide2img);
         tutorialpt1img = (ImageView) findViewById(R.id.tutorialpt1img);
         tutorialpt2Img = (ImageView) findViewById(R.id.tutorialpt2img);
-//        Animation myFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
-
         checkIfTutorialIsOnOrOff();
 
 // Player getting the card information for card 1
@@ -90,7 +89,8 @@ public class BattleActivity extends AppCompatActivity {
         Log.d(getClass().toString(), "Testing the button 1 is working");
         int player1CardValue = Game.getInstance().deck.getCard(Game.getInstance().player1.hand[0]).getValue();
         int computerCardValue = Game.getInstance().deck.getCard(Game.getInstance().computer.hand[0]).getValue();
-        String result = Game.getInstance().whoWins(player1CardValue, computerCardValue);
+        boolean checkBoxStatues = checkRuleChange();
+        String result = Game.getInstance().whoWins(player1CardValue, computerCardValue,checkBoxStatues);
 
         if(result == "You lose play again"){
             image1Button.setImageResource(R.drawable.losing);
@@ -122,7 +122,8 @@ public class BattleActivity extends AppCompatActivity {
         Log.d(getClass().toString(), "Testing the button 2 is working");
         int player1CardValue = Game.getInstance().deck.getCard(Game.getInstance().player1.hand[1]).getValue();
         int computerCardValue = Game.getInstance().deck.getCard(Game.getInstance().computer.hand[1]).getValue();
-        String result = Game.getInstance().whoWins(player1CardValue, computerCardValue);
+        boolean checkBoxStatues = checkRuleChange();
+        String result = Game.getInstance().whoWins(player1CardValue, computerCardValue,checkBoxStatues);
 
         if(result == "You lose play again"){
             image2Button.setImageResource(R.drawable.losing);
@@ -154,7 +155,9 @@ public class BattleActivity extends AppCompatActivity {
         Log.d(getClass().toString(), "Testing the button 3 is working");
         int player1CardValue = Game.getInstance().deck.getCard(Game.getInstance().player1.hand[2]).getValue();
         int computerCardValue = Game.getInstance().deck.getCard(Game.getInstance().computer.hand[2]).getValue();
-        String result = Game.getInstance().whoWins(player1CardValue, computerCardValue);
+        boolean checkBoxStatues = checkRuleChange();
+        String result = Game.getInstance().whoWins(player1CardValue, computerCardValue,checkBoxStatues);
+
 
         if(result == "You lose play again"){
             image3Button.setImageResource(R.drawable.losing);
@@ -227,5 +230,18 @@ public class BattleActivity extends AppCompatActivity {
 
     }
 
+    public boolean checkRuleChange() {
+        CheckBox ruleswap = (CheckBox) findViewById(R.id.ruleSwapCheck);
+        setActivityBackgroundColor(ruleswap.isChecked());
+        return ruleswap.isChecked();
+    }
 
+    public void setActivityBackgroundColor(boolean switchbackground) {
+        ConstraintLayout ll = (ConstraintLayout) findViewById(R.id.battleactivity);
+        if(switchbackground == true) {
+            ll.setBackgroundResource(R.drawable.redbackground);
+        }else {
+            ll.setBackgroundResource(R.drawable.backgroundbattle);
+        }
+    }
 }
