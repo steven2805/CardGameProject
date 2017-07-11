@@ -15,7 +15,6 @@ import android.widget.Toast;
 
 public class StartGameActivity extends AppCompatActivity {
 
-    TextView answerTextview;
     ImageButton StartGameButton;
     CheckBox tutorialCheckBox;
     public boolean checkBoxStatues;
@@ -27,7 +26,6 @@ public class StartGameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_game);
 
-        answerTextview = (TextView) findViewById(R.id.answerTextView);
         StartGameButton = (ImageButton) findViewById(R.id.StartGameButton);
 //        CheckBox tutorialCheckBox = (CheckBox) findViewById(R.id.tutorialCheckBox);
 

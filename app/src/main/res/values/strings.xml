@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Pokemon Game</string>
     <string name="start_game">Start Game</string>
+    <string name="powerupselector">Power-up</string>
+    <string name="notetoo">Please don\'t sue me Nintendo</string>
 </resources>
