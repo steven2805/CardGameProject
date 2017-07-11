@@ -23,6 +23,6 @@ public class Gametest {
 
     @Test
     public void checkWhoWins(){
-        assertEquals("Steven wins",Game.getInstance().whoWins(3,1));
+        assertEquals("Steven wins",Game.getInstance().whoWins(3,1,true));
     }
 }

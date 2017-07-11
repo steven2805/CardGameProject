@@ -45,6 +45,7 @@ public class Game {
         this.drawCounter = 0;
         int counter = 0;
         while (counter < 6) {
+
             int temp = deck.getDeck().get(randomNumber(deck.countDeck())).getId();
             holding[counter] = temp;
             counter++;
@@ -61,7 +62,7 @@ public class Game {
         System.arraycopy(holding,0,player1hand,0,player1hand.length);
         System.arraycopy(holding,player1hand.length,player2hand,0, player2hand.length);
         this.player1 = new Player("Steven",player1hand);
-        this.computer = new Player("MasterRace",player2hand);
+        this.computer = new Player("Your AI overload wins",player2hand);
         setupPowerUps(player1);
         setupPowerUps(computer);
     }
@@ -87,8 +88,6 @@ public class Game {
         }
 
     }
-
-
 
     // simple comparison of who has the highest numbered CARD
     public String whoWins(int playercard, int computercard, boolean ruleswap){
@@ -150,5 +149,10 @@ public class Game {
         Random rand = new Random();
         rand.setSeed(System.currentTimeMillis());
         return rand.nextInt(randomlimit);
+
+
     }
+
+
 }
+

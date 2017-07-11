@@ -84,11 +84,10 @@ public class BattleActivity extends AppCompatActivity {
         int computerCard3ID = Game.getInstance().computer.hand[2];
         computerCard3Resource = Game.getInstance().deck.getCard(computerCard3ID).getResource();
         computerCard3Value = Game.getInstance().deck.getCard(computerCard3ID).getValue();
-
     }
 
 
-// This is settind up the changes from the first button click
+    // This is settind up the changes from the first button click
     public void onButtonClick1(View view){
         setupBattleScene(playerCard1Resource,computerCard1Resource, playerCard1Value,computerCard1Value);
         Log.d(getClass().toString(), "Testing the button 1 is working");
@@ -96,9 +95,7 @@ public class BattleActivity extends AppCompatActivity {
         int computerCardValue = Game.getInstance().deck.getCard(Game.getInstance().computer.hand[0]).getValue();
         boolean checkBoxStatues = checkRuleChange();
         String result = Game.getInstance().whoWins(player1CardValue, computerCardValue,checkBoxStatues);
-
         shouldDisplayRuleChangeCheckBox();
-
         if(result == "You lose play again"){
             image1Button.setImageResource(R.drawable.losing);
         } else if (result == "draw"){
@@ -121,16 +118,8 @@ public class BattleActivity extends AppCompatActivity {
             Toast.makeText(this, winner.name + " is the winner", Toast.LENGTH_LONG).show();
         }
 
-
-//
-//        Resources resources = getApplicationContext().getResources();
-//        final int resource99Id = resources.getIdentifier(placeholder, "drawable",
-//                getApplicationContext().getPackageName());
-//        image1Button.setImageDrawable(resources.getDrawable(resource99Id));
-//        view.setVisibility(View.GONE);
-
     }
-// this is setting up the options for the 2nd button click
+    // this is setting up the options for the 2nd button click
     public void onButtonClick2(View view){
         setupBattleScene(playerCard2Resource,computerCard2Resource,playerCard2Value,computerCard2Value);
         Log.d(getClass().toString(), "Testing the button 2 is working");
@@ -160,15 +149,9 @@ public class BattleActivity extends AppCompatActivity {
             }, 3000);
             Toast.makeText(this, winner.name + " is the winner", Toast.LENGTH_LONG).show();
         }
-//
-//        Resources resources = getApplicationContext().getResources();
-//        final int resource99Id = resources.getIdentifier(placeholder, "drawable",
-//                getApplicationContext().getPackageName());
-//        image1Button.setImageDrawable(resources.getDrawable(resource99Id));
-//        view.setVisibility(View.GONE);
 
     }
-// this is setting uo the optinos for the 3rd button click
+    // this is setting uo the optinos for the 3rd button click
     public void onButtonClick3(View view){
         setupBattleScene(playerCard3Resource,computerCard3Resource,playerCard3Value,computerCard3Value);
         Log.d(getClass().toString(), "Testing the button 3 is working");
@@ -177,7 +160,6 @@ public class BattleActivity extends AppCompatActivity {
         boolean checkBoxStatues = checkRuleChange();
         String result = Game.getInstance().whoWins(player1CardValue, computerCardValue,checkBoxStatues);
         shouldDisplayRuleChangeCheckBox();
-
         if(result == "You lose play again"){
             image3Button.setImageResource(R.drawable.losing);
         } else if (result == "draw"){
@@ -189,7 +171,6 @@ public class BattleActivity extends AppCompatActivity {
         image3Button.setClickable(false);
 
         Toast.makeText(this, result, Toast.LENGTH_LONG).show();
-
         Player winner = Game.getInstance().whoWinsTheGame();
         if(winner != null){
             new Handler().postDelayed(new Runnable() {
@@ -200,15 +181,9 @@ public class BattleActivity extends AppCompatActivity {
             }, 3000);
             Toast.makeText(this, winner.name + " is the winner", Toast.LENGTH_LONG).show();
         }
-//
-//        Resources resources = getApplicationContext().getResources();
-//        final int resource99Id = resources.getIdentifier(placeholder, "drawable",
-//                getApplicationContext().getPackageName());
-//        image1Button.setImageDrawable(resources.getDrawable(resource99Id));
-//        view.setVisibility(View.GONE);
 
     }
-// Basic setup information for the battleScreen(removing the tut tooltip)
+    // Basic setup information for the battleScreen(removing the tut tooltip)
     public void setupBattleScene(int player, int computer, int plyCardValue,int cmpCardValue){
         ToolTip.setVisibility(View.GONE);
         playerBattleImg.setImageResource(player);
@@ -217,10 +192,9 @@ public class BattleActivity extends AppCompatActivity {
         computerBattleImg.setVisibility(View.VISIBLE);
         playerBattleScore.setText(Integer.toString(plyCardValue));
         computerBattleScore.setText(Integer.toString(cmpCardValue));
-
     }
 
-
+    // used in checking whether the switch for the tut is on or off
     public void checkIfTutorialIsOnOrOff(){
         boolean tutValue = Game.getInstance().getTutorialStatues();
         if(tutValue == false){
@@ -242,6 +216,7 @@ public class BattleActivity extends AppCompatActivity {
     public void runTutorial(){
     }
 
+    // used for the tutorial mode
     public void tutorialImgDisappearOnClick(View view) {
         tutorialpt1img.setVisibility(View.GONE);
         guideimage.setVisibility(View.GONE);
@@ -255,9 +230,9 @@ public class BattleActivity extends AppCompatActivity {
         image1Button.setVisibility(View.VISIBLE);
         image2Button.setVisibility(View.VISIBLE);
         image3Button.setVisibility(View.VISIBLE);
-
     }
 
+    //checks whether the change rules/powerups has been selected
     public void shouldDisplayRuleChangeCheckBox(){
         CheckBox ruleswap = (CheckBox) findViewById(R.id.ruleSwapCheck);
         if (Game.getInstance().player1.powerup > 0){
@@ -279,7 +254,7 @@ public class BattleActivity extends AppCompatActivity {
             Game.getInstance().player1.powerup = 0;
             ll.setBackgroundResource(R.drawable.redbackground);
         }else {
-          ll.setBackgroundResource(R.drawable.backgroundbattle);
+            ll.setBackgroundResource(R.drawable.backgroundbattle);
         }
     }
 }
