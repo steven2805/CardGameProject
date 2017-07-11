@@ -78,13 +78,14 @@ public class Game {
         }
         return array;
     }
-
+// method for randomly giving the player a power-up or not
+    // Code changed to force power-up for demo purposes
     public void setupPowerUps(Player player){
-        int rand = randomNumber(3);
+        int rand = 1;//randomNumber(3);
         if(rand == 1) {
-            player.powerup = 1;
+            player.setPowerup(1);
         }else{
-            player.powerup = 0;
+            player.setPowerup(0);;
         }
 
     }
