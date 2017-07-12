@@ -23,6 +23,11 @@ public class Gametest {
 
     @Test
     public void checkWhoWins(){
-        assertEquals("Steven wins",Game.getInstance().whoWins(3,1,true));
+        assertEquals("Steven wins",Game.getInstance().whoWins(1,3,true));
+    }
+
+    @Test
+    public void checkRuleChangeisWorking(){
+        assertEquals("Steven wins",Game.getInstance().whoWins(3,1,false));
     }
 }

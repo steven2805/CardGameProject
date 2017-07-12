@@ -52,7 +52,7 @@ ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/
 	android:name
 		ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:16:27-74
 activity#com.example.stevenmacdonald.cardgameproject.BattleActivity
-ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:19:9-61
+ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:19:9-52
 	android:name
 		ADDED from /Users/stevenmacdonald/AndroidStudioProjects/CardGameProject/app/src/main/AndroidManifest.xml:19:19-49
 uses-sdk

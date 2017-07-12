@@ -30,9 +30,7 @@ public class StartGameActivity extends AppCompatActivity {
 //        CheckBox tutorialCheckBox = (CheckBox) findViewById(R.id.tutorialCheckBox);
 
     }
-
-
-
+    
 
     public void buttonClicked(View button){
         CheckBox tutorialCheckBox = (CheckBox) findViewById(R.id.tutorialCheckBox);

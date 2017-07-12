@@ -1,5 +1,7 @@
 package com.example.stevenmacdonald.cardgameproject;
 
+import android.util.Log;
+
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -44,10 +46,12 @@ public class Game {
         this.computerScore = 0;
         this.drawCounter = 0;
         int counter = 0;
-        while (counter < 6) {
 
-            int temp = deck.getDeck().get(randomNumber(deck.countDeck())).getId();
-            holding[counter] = temp;
+        Random random = new Random();
+
+        while (counter < 6) {
+//          int temp = deck.getDeck().get(randomNumber(deck.countDeck())).getId();
+            holding[counter] = deck.getDeck().get(random.nextInt(deck.countDeck())).getId();
             counter++;
         }
         setupPlayers();
@@ -142,11 +146,11 @@ public class Game {
 
     // random number generation (takes a value in to set the maximum value possible)
     private int randomNumber(int randomlimit) {
-        try {
-            TimeUnit.MILLISECONDS.sleep(1);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            TimeUnit.MILLISECONDS.sleep(1);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         Random rand = new Random();
         rand.setSeed(System.currentTimeMillis());
         return rand.nextInt(randomlimit);
