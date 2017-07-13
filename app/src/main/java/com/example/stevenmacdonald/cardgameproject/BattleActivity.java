@@ -210,10 +210,8 @@ public class BattleActivity extends AppCompatActivity {
             image3Button.setVisibility(View.INVISIBLE);
             tutorialpt2Img.setVisibility(View.INVISIBLE);
             guide2img.setVisibility(View.INVISIBLE);
-            runTutorial();
+
         }
-    }
-    public void runTutorial(){
     }
 
     // used for the tutorial mode
